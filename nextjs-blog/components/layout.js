@@ -5,8 +5,8 @@ import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Jumbo from "../components/Jumbo";
 
-const name = "Plan-it-Fitness";
-export const siteTitle = "Next.js Sample Website";
+const name = "";
+export const siteTitle = "Plan-it-Fitness";
 
 export default function Layout({ children, home }) {
   return (
