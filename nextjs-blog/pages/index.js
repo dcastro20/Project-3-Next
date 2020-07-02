@@ -3,6 +3,8 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Container from "react-bootstrap/Container";
 import Cards from "../components/Cards";
+import React from "react";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +29,7 @@ export default function Home() {
       <div>
         <Cards />
       </div>
+      <Footer />
     </Layout>
   );
 }
