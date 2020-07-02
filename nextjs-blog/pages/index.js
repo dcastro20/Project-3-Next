@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
+import Container from "react-bootstrap/Container";
 
 export default function Home() {
   return (
@@ -9,11 +10,17 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Your new life starts here!</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <Container>
+          <p>
+            Welcome to Plan-it-Fitness! Your new life starts here. No gym
+            membership or equipments required. Our members have access to
+            awesome stuff like our workout database. Try out home based workouts
+            based on your fitness level. Check your body mass index with our BMI
+            calculator. Following a certain diet? Curious about what nutrients
+            you're getting from foods you eat? Then simply use our Nutrition
+            Search bar to see what nutrients food items have.
+          </p>
+        </Container>
       </section>
     </Layout>
   );

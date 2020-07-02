@@ -8,7 +8,9 @@ import Link from "next/link";
 
 const Navigation = () => (
   <Navbar bg="light" expand="lg">
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar.Brand href="#home">
+      <img height="50px" width="50px" src="/images/logo.png"></img>
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
@@ -30,8 +32,13 @@ const Navigation = () => (
         </NavDropdown>
       </Nav>
       <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-success">Search</Button>
+        <FormControl type="text" placeholder="Email" className="mr-sm-2" />
+        <FormControl
+          type="password"
+          placeholder="Password"
+          className="mr-sm-2"
+        />
+        <Button variant="outline-success">Log In</Button>
       </Form>
     </Navbar.Collapse>
   </Navbar>

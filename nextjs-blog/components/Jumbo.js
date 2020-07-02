@@ -4,11 +4,16 @@ import Container from "react-bootstrap/Container";
 const Jumbo = () => (
   <Jumbotron fluid>
     <Container>
-      <h1>Fluid jumbotron</h1>
-      <p>
-        This is a modified jumbotron that occupies the entire horizontal space
-        of its parent.
-      </p>
+      <h1>Plan-it-Fitness</h1>
+      <img
+        src="/images/fitness2.jpg"
+        style={{
+          width: "auto",
+          height: "auto",
+          marginLeft: "10px",
+        }}
+        alt="Logo"
+      />
     </Container>
   </Jumbotron>
 );
