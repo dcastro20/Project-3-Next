@@ -7,6 +7,7 @@ import SearchBar from "../components/searchBar";
 import Footer from "../components/Footer";
 import Calculator from "../components/Calculator";
 
+
 export default function Members() {
   return (
     <Layout Members>
@@ -26,7 +27,6 @@ export default function Members() {
       <Library />
       <SearchBar />
       <Calculator />
-
       <Footer />
     </Layout>
   );

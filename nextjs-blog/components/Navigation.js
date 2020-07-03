@@ -16,9 +16,11 @@ const Navigation = () => (
         <Link href="/">
           <a>Home</a>
         </Link>
+        ' '
         <Link href="Members">
-          <a>Members</a>
+          <a> Members </a>
         </Link>
+        ' '
         <Link href="SignUp">
           <a>Sign-Up</a>
         </Link>
