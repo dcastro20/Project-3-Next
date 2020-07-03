@@ -2,7 +2,9 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Container from "react-bootstrap/Container";
-import SearchBar from "../components/SearchBar";
+import Library from "../components/Library";
+import SearchBar from "../components/searchBar";
+import Footer from "../components/Footer";
 
 export default function Members() {
   return (
@@ -20,7 +22,10 @@ export default function Members() {
           </p>
         </Container>
       </section>
+      <Library />
       <SearchBar />
+
+      <Footer />
     </Layout>
   );
 }

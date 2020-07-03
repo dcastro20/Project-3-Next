@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 
 class SearchBar extends Component {
   constructor(props) {
@@ -14,16 +16,17 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div
+      <Container
         className="search-bar"
         style={{ margin: "20px", textAlign: "center" }}
       >
         <input
           value={this.state.term}
           onChange={(event) => this.onInputChange(event.target.value)}
-          style={{ width: "75%" }}
+          style={{ width: "80%" }}
         />
-      </div>
+        <Button variant="success">Search</Button>
+      </Container>
     );
   }
 }
