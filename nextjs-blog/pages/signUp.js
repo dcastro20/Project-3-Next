@@ -3,6 +3,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import SignUpComp from "../components/SignUpComp";
 import Container from "react-bootstrap/Container";
+import Footer from "../components/Footer";
 
 export default function SignUp() {
   return (
@@ -20,6 +21,7 @@ export default function SignUp() {
         </Container>
         <SignUpComp />
       </section>
+      <Footer />
     </Layout>
   );
 }
