@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 
 const Navigation = () => (
-  <Navbar bg="light" expand="lg">
+  <Navbar bg="dark" expand="lg">
     <Navbar.Brand href="#home">
       <img height="50px" width="50px" src="/images/logo.png"></img>
     </Navbar.Brand>
@@ -24,7 +24,6 @@ const Navigation = () => (
         </Link>
       </Nav>
       <Form inline>
-        Log In Here!
         <FormControl type="text" placeholder="Email" className="mr-sm-1" />
         <FormControl
           type="password"

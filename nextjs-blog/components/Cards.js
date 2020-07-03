@@ -12,9 +12,6 @@ const Cards = () => (
           to additional content. This content is a little bit longer.
         </Card.Text>
       </Card.Body>
-      <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </Card.Footer>
     </Card>
     <Card>
       <Card.Img variant="top" src="/images/BMI.jpg" height="330" />
@@ -25,9 +22,6 @@ const Cards = () => (
           content.{" "}
         </Card.Text>
       </Card.Body>
-      <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </Card.Footer>
     </Card>
     <Card>
       <Card.Img variant="top" src="/images/Nutrition.jpg" heigth="300" />
@@ -39,9 +33,6 @@ const Cards = () => (
           first to show that equal height action.
         </Card.Text>
       </Card.Body>
-      <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </Card.Footer>
     </Card>
   </CardGroup>
 );
