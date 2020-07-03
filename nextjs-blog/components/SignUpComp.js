@@ -11,6 +11,16 @@ const SignUpForm = () => {
   return (
     <Container>
       <Form>
+        <FormGroup controlId="formBasicFirstName">
+          <FormLabel>First Name</FormLabel>
+          <FormControl type="text" placeholder="First Name" />
+        </FormGroup>
+
+        <FormGroup controlId="formBasicLastName">
+          <FormLabel>Last Name</FormLabel>
+          <FormControl type="text" placeholder="Last Name" />
+        </FormGroup>
+
         <FormGroup controlId="formBasicEmail">
           <FormLabel>Email address</FormLabel>
           <FormControl type="email" placeholder="Enter email" />
@@ -26,7 +36,8 @@ const SignUpForm = () => {
         <FormGroup controlId="formBasicCheckbox">
           <FormCheck type="checkbox" label="Save my password" />
         </FormGroup>
-        <Button variant="primary" type="submit">
+
+        <Button variant="success" type="submit">
           Submit
         </Button>
       </Form>

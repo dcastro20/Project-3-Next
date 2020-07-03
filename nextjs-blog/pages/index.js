@@ -17,11 +17,11 @@ export default function Home() {
           <p>
             Welcome to Plan-it-Fitness! Your new life starts here. No gym
             membership or equipments required. Our members have access to
-            awesome stuff like our workout database. Try out home based workouts
-            based on your fitness level. Check your body mass index with our BMI
-            calculator. Following a certain diet? Curious about what nutrients
-            you're getting from foods you eat? Then simply use our Nutrition
-            Search bar to see what nutrients food items have.
+            awesome features like our workout database. Try out home based
+            workouts based on your fitness level. Check your body mass index
+            with our BMI calculator. Following a certain diet? Curious about
+            what nutrients you're getting from foods you eat? Then simply use
+            our Nutrition Search bar to see what nutrients food items have.
           </p>
         </Container>
       </section>
