@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Navigation = () => (
   <Navbar bg="dark" expand="lg">
-    <Navbar.Brand href="#home">
+    <Navbar.Brand>
       <img height="50px" width="50px" src="/images/logo.png"></img>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

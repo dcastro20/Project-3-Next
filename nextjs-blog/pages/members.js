@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Library from "../components/Library";
 import SearchBar from "../components/searchBar";
 import Footer from "../components/Footer";
+import Calculator from "../components/Calculator";
 
 export default function Members() {
   return (
@@ -24,6 +25,7 @@ export default function Members() {
       </section>
       <Library />
       <SearchBar />
+      <Calculator />
 
       <Footer />
     </Layout>
