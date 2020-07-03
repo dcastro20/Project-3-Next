@@ -6,6 +6,7 @@ import Library from "../components/Library";
 import SearchBar from "../components/searchBar";
 import Footer from "../components/Footer";
 
+
 export default function Members() {
   return (
     <Layout Members>
@@ -24,7 +25,6 @@ export default function Members() {
       </section>
       <Library />
       <SearchBar />
-
       <Footer />
     </Layout>
   );
