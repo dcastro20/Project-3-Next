@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const FooterPage = () => {
   return (
-    <footer color="blue" className="font-small pt-4 mt-4">
+    <footer class="footer bg-black small text-center text-black-50">
       <Container fluid className="text-center text-md-left">
         <Row>
           <Col md="6">

@@ -26,9 +26,9 @@ export default function Home() {
         </Container>
       </section>
       <br></br>
-      <div>
+      <section>
         <Cards />
-      </div>
+      </section>
       <Footer />
     </Layout>
   );
