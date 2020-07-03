@@ -21,6 +21,7 @@ class SearchBar extends Component {
         style={{ margin: "20px", textAlign: "center" }}
       >
         <input
+          placeholder="Search for workouts that suit you!"
           value={this.state.term}
           onChange={(event) => this.onInputChange(event.target.value)}
           style={{ width: "80%" }}
