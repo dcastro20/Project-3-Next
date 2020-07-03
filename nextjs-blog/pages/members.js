@@ -14,7 +14,7 @@ export default function Members() {
       </Head>
       <section className={utilStyles.headingMd}>
         <Container>
-          <h2 class="display-4">Welcome, Member!</h2>
+          <h2 className="display-4">Welcome, Member!</h2>
           <p>
             This is the members page where you can view workouts from all
             levels, search nutritional facts, calculate your BMI, and customize
