@@ -1,16 +1,16 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout2, { siteTitle } from "../components/Layout2";
 import utilStyles from "../styles/utils.module.css";
 import Container from "react-bootstrap/Container";
 import Library from "../components/Library";
 import SearchBar from "../components/searchBar";
 import Footer from "../components/Footer";
 import Calculator from "../components/Calculator";
-
+import Nutrition from "../components/Nutrition";
 
 export default function Members() {
   return (
-    <Layout Members>
+    <Layout2 Members>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -27,7 +27,8 @@ export default function Members() {
       <Library />
       <SearchBar />
       <Calculator />
+      <Nutrition />
       <Footer />
-    </Layout>
+    </Layout2>
   );
 }

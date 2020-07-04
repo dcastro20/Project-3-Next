@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout3, { siteTitle } from "../components/Layout3";
 import utilStyles from "../styles/utils.module.css";
 import SignUpComp from "../components/SignUpComp";
 import Container from "react-bootstrap/Container";
@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function SignUp() {
   return (
-    <Layout home>
+    <Layout3 home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -22,6 +22,6 @@ export default function SignUp() {
         <SignUpComp />
       </section>
       <Footer />
-    </Layout>
+    </Layout3>
   );
 }
