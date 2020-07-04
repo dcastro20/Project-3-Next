@@ -24,7 +24,7 @@ const Cards = () => (
       </Card.Body>
     </Card>
     <Card>
-      <Card.Img variant="top" src="/images/Nutrition.jpg" heigth="300" />
+      <Card.Img variant="top" src="/images/Nutrition.jpg" heigth="330" />
       <Card.Body>
         <Card.Title>Nutrition Facts</Card.Title>
         <Card.Text>
