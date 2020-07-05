@@ -5,8 +5,9 @@ import fetcher from './fetch';
 export function useCurrentUser() {
   console.log('useCurrentUser');
   const { data, error, mutate } = useSWR('/api/user', fetcher);
-  if (error) consoler.log('userCurrentUser - error', error);
-  
+
+  if (error) console.log("useCurrentUser - error", error);
+
   const user = data?.user;
   return [user, { mutate }];
 }
