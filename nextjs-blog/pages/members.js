@@ -7,8 +7,23 @@ import SearchBar from "../components/searchBar";
 import Footer from "../components/Footer";
 import Calculator from "../components/Calculator";
 import Nutrition from "../components/Nutrition";
+// Next.js backend
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { useCurrentUser } from "../lib/hooks";
 
 export default function Members() {
+  // Next.js backend ---------------->>
+  console.log("Members");
+  const router = useRouter();
+  const [errorMsg, setErrorMsg] = useState("");
+  const [user, { mutate }] = useCurrentUser();
+  // redirect to home if user is authenticated
+  console.log('is users Authenticated? if no, redirect to SignUp');
+  if (!user) router.push("/signUp")
+  // Next.js backend <<----------------
+
+
   return (
     <Layout2 Members>
       <Head>
