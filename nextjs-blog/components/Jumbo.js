@@ -8,12 +8,12 @@ const Jumbo = () => (
         justifyContent: "center",
         alignItems: "center",
       }}
-      classname="container"
+      className="container"
     >
       <img
         src="/images/logo.png"
         style={{ width: "200px", height: "auto", marginLeft: "10px" }}
-        classname="float-left"
+        className="float-left"
         alt="Logo"
       />
       <br></br>
