@@ -21,12 +21,12 @@ const Navigation = () => {
     console.log("onSubmit - e.currentTarget", e.currentTarget);
     const body = {
       email: e.currentTarget.email.value,
-      password: e.currentTarget.password.value
+      password: e.currentTarget.password.value,
     };
     const res = await fetch("/api/auth", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
     if (res.status === 200) {
       const userObj = await res.json();
@@ -59,25 +59,31 @@ const Navigation = () => {
             <a>Sign-Up</a>
           </Link>
         </Nav>
-        <Form onSubmit={onSubmit} inline>
-          <FormControl
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            className="mr-sm-1"
-          />
-          <FormControl
-            id="password"
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="mr-sm-1"
-          />
+        {!user ? (
+          <Form onSubmit={onSubmit} inline>
+            <FormControl
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              className="mr-sm-1"
+            />
+            <FormControl
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              className="mr-sm-1"
+            />
+            <Button type="submit" variant="success">
+              Log In
+            </Button>
+          </Form>
+        ) : (
           <Button type="submit" variant="success">
-            Log In
+            Log Out
           </Button>
-        </Form>
+        )}
       </Navbar.Collapse>
     </Navbar>
   );

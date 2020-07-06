@@ -21,6 +21,10 @@ export default function SignUp() {
         </Container>
         <SignUpComp />
       </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Footer />
     </Layout3>
   );
