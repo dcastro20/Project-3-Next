@@ -9,7 +9,7 @@ class Calculator extends Component {
   state = {
     weight: "",
     height: "",
-    result: ""
+    bmi: ''
   };
   handleChange = (event) => {
     console.log("handleChange");
@@ -22,15 +22,20 @@ class Calculator extends Component {
     console.log(this.state);
   };
 
-  handleSubmit = (event) => {
-    console.log("handleSubmit");
-    event.preventDefault();
+  calculateBMI() {
+    console.log('calculateBMI');
     let result = ((this.state.weight / this.state.height / this.state.height) * 703).toFixed(2);
     console.log("result", result);
     this.setState({
-      ["result"]: result.toString()
+      bmi: result.toString()
     });
-    console.log(this.state.result)
+    console.log('this.state.bmi:', this.state.bmi)
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("handleSubmit");
+    this.calculateBMI();
   };
   render() {
     return (
@@ -65,6 +70,7 @@ class Calculator extends Component {
                   />
                   <br /> <br />
                 </div>
+                <h2>{this.state.bmi}</h2>
                 <Button type="submit" variant="success">
                   Calculate BMI
                 </Button>
@@ -89,6 +95,27 @@ class Calculator extends Component {
   }
 }
 export default Calculator;
+
+
+
+//   render() {
+//     return (
+//       <div>
+//         Enter Your Weight(lbs):{" "}
+//         <input style={{ width: "15%" }} type="text" onChange={this.handle.bind(this)} id="w" />
+//         <br /> <br />
+//         Enter Your Height(in.):{" "}
+//         <input style={{ width: "17%" }} type="text" onChange={this.handle.bind(this)} id="h" />
+//         <br /> <br />
+//         <Button id="calculateBMI" onclick={}>
+//           Calculate BMI
+//         </Button>
+//         <br></br>
+//         <p style={{ fontSize: "larger" }} id="result" />
+//       </div>
+//     );
+//   }
+// }
 
 
 // const Calculator = () => (
