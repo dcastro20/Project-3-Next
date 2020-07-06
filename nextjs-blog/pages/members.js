@@ -11,6 +11,9 @@ import Nutrition from "../components/Nutrition";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useCurrentUser } from "../lib/hooks";
+import ReactDOM from "react-dom";
+import App from "../components/App";
+import searchBar from "../components/searchBar";
 
 export default function Members() {
   // Next.js backend ---------------->>
@@ -19,10 +22,9 @@ export default function Members() {
   const [errorMsg, setErrorMsg] = useState("");
   const [user, { mutate }] = useCurrentUser();
   // redirect to home if user is authenticated
-  console.log('is users Authenticated? if no, redirect to SignUp');
-  if (!user) router.push("/signUp")
+  console.log("is users Authenticated? if no, redirect to SignUp");
+  if (!user) router.push("/signUp");
   // Next.js backend <<----------------
-
 
   return (
     <Layout2 Members>
