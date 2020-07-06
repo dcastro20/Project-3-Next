@@ -4,7 +4,6 @@ import FormControl from "react-bootstrap/FormControl";
 import FormGroup from "react-bootstrap/FormGroup";
 import FormLabel from "react-bootstrap/FormLabel";
 import FormText from "react-bootstrap/FormText";
-import FormCheck from "react-bootstrap/FormCheck";
 import Button from "react-bootstrap/Button";
 // Next.js backend
 import React, { useState, useEffect } from "react";
@@ -18,23 +17,23 @@ const SignUpForm = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [user, { mutate }] = useCurrentUser();
   // redirect to home if user is authenticated
-  console.log('is users Authenticated? if yes , redirect to home');
+  console.log("is users Authenticated? if yes , redirect to home");
   if (user) router.push("/");
 
   async function onSubmit(e) {
     e.preventDefault();
     console.log("onSubmit - e.currentTarget", e.currentTarget);
-    console.log('e.currentTarget.first_name', e.currentTarget.first_name.value )
-    console.log('e.currentTarget.last_name', e.currentTarget.last_name.value )
+    console.log("e.currentTarget.first_name", e.currentTarget.first_name.value);
+    console.log("e.currentTarget.last_name", e.currentTarget.last_name.value);
     const body = {
       first_name: e.currentTarget.first_name.value,
       last_name: e.currentTarget.last_name.value,
       email: e.currentTarget.email.value,
-      password: e.currentTarget.password.value
+      password: e.currentTarget.password.value,
     };
-    const res = await fetch('/api/users', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const res = await fetch("/api/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     });
     if (res.status === 200) {
@@ -72,9 +71,6 @@ const SignUpForm = () => {
         <FormGroup controlId="formBasicPassword">
           <FormLabel>Password</FormLabel>
           <FormControl type="password" name="password" placeholder="Password" />
-        </FormGroup>
-        <FormGroup controlId="formBasicCheckbox">
-          <FormCheck type="checkbox" name="save" label="Save my password" />
         </FormGroup>
 
         <Button variant="success" type="submit">

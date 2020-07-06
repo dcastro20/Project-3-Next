@@ -31,26 +31,38 @@ export default function Members() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section
+        className={user ? `${user.first_name} ${user.last_name}` : "stranger"}
+      >
         <Container>
           <h2 className="display-4" className="display-4">
-            Welcome,
-            {' '}
-            {user ? `${user.first_name} ${user.last_name}` : 'stranger'}
-            !
+            {" "}
           </h2>
-          <p>
-            This is the members page where you can view workouts from all
+          <h2>
+            This is your member page where you can view workouts from all
             levels, search nutritional facts, calculate your BMI, and customize
-            your own weekly planner!
-          </p>
+            your own planner!
+          </h2>
         </Container>
+        <br></br>
       </section>
+      <br></br>
       <Library />
+      <br></br>
+      <br></br>
+      <br></br>
       <SearchBar />
+      <br></br>
       <Calculator />
+      <br></br>
+      <br></br>
+      <br></br>
       <Nutrition />
+      <br></br>
+      <br></br>
+      <br></br>
       <Footer />
+      <br></br>
     </Layout2>
   );
 }
