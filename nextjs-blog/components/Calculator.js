@@ -19,15 +19,39 @@ const Calculator = () => (
         <p id="lbl" style={{ textAlign: "center" }}>
           BMI Calculator
         </p>
-        Enter Your Weight(lbs):{" "}
-        <input style={{ width: "15%" }} type="text" id="w" />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Enter Your Weight(lbs):{" "}
+          <input style={{ width: "15%" }} type="text" id="w" />
+        </div>
         <br /> <br />
-        Enter Your Height(in.):{" "}
-        <input style={{ width: "17%" }} type="text" id="h" />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Enter Your Height(in.):{" "}
+          <input style={{ width: "17%" }} type="text" id="h" />
+        </div>
         <br /> <br />
-        <Button id="calculateBMI" onclick="BMI()">
-          Calculate BMI
-        </Button>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Button variant="success" id="calculateBMI" onclick="BMI()">
+            Calculate BMI
+          </Button>
+        </div>
         <br></br>
         <p style={{ fontSize: "larger" }} id="result" />
       </Col>

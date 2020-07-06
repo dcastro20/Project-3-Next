@@ -21,12 +21,12 @@ const Navigation = () => {
     console.log("onSubmit - e.currentTarget", e.currentTarget);
     const body = {
       email: e.currentTarget.email.value,
-      password: e.currentTarget.password.value
+      password: e.currentTarget.password.value,
     };
     const res = await fetch("/api/auth", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     });
     if (res.status === 200) {
       const userObj = await res.json();

@@ -19,10 +19,10 @@ export default function Members() {
   const [errorMsg, setErrorMsg] = useState("");
   const [user, { mutate }] = useCurrentUser();
   // redirect to home if user is authenticated
-  console.log('is users Authenticated? if no, redirect to SignUp');
-  if (!user) router.push("/signUp")
-  // Next.js backend <<----------------
+  console.log("is users Authenticated? if no, redirect to SignUp");
+  if (!user) router.push("/signUp");
 
+  // Next.js backend <<----------------
 
   return (
     <Layout2 Members>
@@ -40,9 +40,17 @@ export default function Members() {
         </Container>
       </section>
       <Library />
+      <br></br>
+      <br></br>
       <SearchBar />
+      <br></br>
+      <br></br>
       <Calculator />
+      <br></br>
+      <br></br>
       <Nutrition />
+      <br></br>
+      <br></br>
       <Footer />
     </Layout2>
   );

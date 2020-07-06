@@ -18,7 +18,7 @@ class SearchBar extends Component {
     return (
       <Container
         className="search-bar"
-        style={{ margin: "20px", textAlign: "center" }}
+        style={{ margin: "auto", textAlign: "center" }}
       >
         <input
           placeholder="Search for workouts that suit you!"
