@@ -1,10 +1,10 @@
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 const Jumbo3 = () => (
-  <Jumbotron fluid>
-    <h1>Plan-it-Fitness</h1>
-    <img src="/images/fitness3.jpg" fluid="true" alt="Logo" />
-  </Jumbotron>
+
+    <img src="/images/fitness3.jpg" fluid="true" width="100%" height="auto" alt="Logo" />
+
 );
 
 export default Jumbo3;
+
