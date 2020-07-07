@@ -34,10 +34,8 @@ export default function Members() {
       <section className={utilStyles.headingMd}>
         <Container>
           <h2 className="display-4" className="display-4">
-            Welcome,
-            {' '}
-            {user ? `${user.first_name} ${user.last_name}` : 'stranger'}
-            !
+            Welcome,{" "}
+            {user ? `${user.first_name} ${user.last_name}` : "stranger"}!
           </h2>
           <p>
             This is the members page where you can view workouts from all

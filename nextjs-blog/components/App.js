@@ -1,45 +1,44 @@
-import React from "react";
-import SearchBar from "./searchBar";
-import youtube from "../pages/api/youtube";
-import VideoList from "./videoList";
-import VideoDetail from "./videoDetails";
+import React, { Component } from "react";
+import SearchBar from "../components/searchBar";
+import YTSearch from "youtube-api-search";
+import VideoList from "../components/videoList";
+import VideoDetail from "../components/videoDetails";
+const API_KEY = "AIzaSyCiZbQgW_osNuaQNxXcFwk_3yuo6_kL7dc";
 
-class App extends React.Component {
-  state = {
-    videos: [],
-    selectedVideo: null,
-  };
-  handleSubmit = async (termFromSearchBar) => {
-    const response = await youtube.get("/search", {
-      params: {
-        q: termFromSearchBar,
-      },
-    });
-    this.setState({
-      videos: response.data.items,
-    });
-  };
-  handleVideoSelect = (video) => {
-    this.setState({ selectedVideo: video });
-  };
+class App extends Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      videos: [],
+      selectedVideo: null,
+    };
+
+    this.videoSearch("pushups");
+  }
+
+  videoSearch(searchTerm) {
+    YTSearch({ key: API_KEY, term: searchTerm }, (data) => {
+      console.log(data);
+      this.setState({
+        videos: data,
+        selectedVideo: data[0],
+      });
+    });
+  }
   render() {
     return (
-      <div className="ui container" style={{ marginTop: "1em" }}>
-        <SearchBar handleFormSubmit={this.handleSubmit} />
-        <div className="ui grid">
-          <div className="ui row">
-            <div className="eleven wide column">
-              <VideoDetail video={this.state.selectedVideo} />
-            </div>
-            <div className="five wide column">
-              <VideoList
-                handleVideoSelect={this.handleVideoSelect}
-                videos={this.state.videos}
-              />
-            </div>
-          </div>
-        </div>
+      <div>
+        <SearchBar
+          onSearchTermChange={(searchTerm) => this.videoSearch(searchTerm)}
+        />
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList
+          onVideoSelect={(userSelected) =>
+            this.setState({ selectedVideo: userSelected })
+          }
+          videos={this.state.videos}
+        />
       </div>
     );
   }
