@@ -46,8 +46,10 @@ function Searchbar() {
         >
           <label htmlFor="video-search">
             <b>
+              <h4>
               Didn't find a workout that suits you? Search for your favorites
               one here!
+              </h4>
             </b>{" "}
           </label>
           <input
