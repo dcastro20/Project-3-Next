@@ -1,4 +1,5 @@
 import Head from "next/head";
+import MainHeader from "../components/Homenav";
 import Layout, { siteTitle } from "../components/Layout";
 import utilStyles from "../styles/utils.module.css";
 import Container from "react-bootstrap/Container";
@@ -19,6 +20,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <MainHeader/>
       <section className={utilStyles.headingMd}>
         <Container>
           <h2>

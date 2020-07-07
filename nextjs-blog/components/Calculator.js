@@ -40,6 +40,7 @@ class Calculator extends Component {
   render() {
     return (
       <div className="search-bar ui segment">
+        <section id ="calculator">
         <Container>
           <Row>
             <Col md="4">
@@ -106,6 +107,7 @@ class Calculator extends Component {
             </Col>
           </Row>
         </Container>
+        </section>
       </div>
     );
   }

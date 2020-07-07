@@ -25,3 +25,58 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
+/* Members Navbar */
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+/* nav-wrap */
+#nav-wrap {
+  font: 22px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: auto;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+}
+/* Links */
+ul#nav li a {
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+ text-decoration: none;
+  text-align: center;
+  color: #F06000;
+}
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }

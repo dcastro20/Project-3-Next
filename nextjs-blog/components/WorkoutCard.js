@@ -3,11 +3,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const WorkoutCard = () => (
+  <section id ="workoutcard">
   <Container>
     <h3>The Workouts</h3>
     <Row>
       <Col md="6">
-        <img src="/images/fitness4.jpg"></img>
+        <img src="/images/fitness1.jpg"></img>
       </Col>
       <Col md="6">
         <p>
@@ -19,6 +20,7 @@ const WorkoutCard = () => (
       </Col>
     </Row>
   </Container>
+  </section>
 );
 
 export default WorkoutCard;
