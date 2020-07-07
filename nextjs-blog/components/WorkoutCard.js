@@ -5,12 +5,13 @@ import Col from "react-bootstrap/Col";
 const WorkoutCard = () => (
   <section id ="workoutcard">
   <Container>
-    <h3>The Workouts</h3>
+
     <Row>
       <Col md="6">
         <img src="/images/fitness1.jpg"></img>
       </Col>
       <Col md="6">
+      <h3>The Workouts</h3>
         <p>
           Checkout our home-based workout database. We provide our members with
           videos showing how to perform each exercise properly. We don't want

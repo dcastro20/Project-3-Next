@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col";
 const BMICard = () => (
   <section id ="bmicard">
   <Container>
-    <h3>BMI Calculator</h3>
     <Row>
       <Col md="6">
+        <h3>BMI Calculator</h3>
         <p>
           Our users have access to our body mass index calculator. BMI
           calculates a person's body fat percentage. Type in your height and
