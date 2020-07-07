@@ -13,7 +13,7 @@ const Nutrition = () => {
           </Col>
           <Col md="4" style={{ width: "auto" }}>
             <h4 id="lbl" style={{ textAlign: "center" }}>
-              <b>Nutritional Values</b>
+              <b>Nutritional Search</b>
             </h4>
             <h6
               style={{
@@ -48,7 +48,7 @@ const Nutrition = () => {
           <Col md="4">
             <h4 id="lbl" style={{ textAlign: "center" }}>
               <b>Nutritional Values</b>
-            </4>
+            </h4>
             <div id="monitor-data" className="value-container">
               <p className="health-data">
                 <span id="calories" />{" "}
