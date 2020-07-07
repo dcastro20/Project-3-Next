@@ -4,10 +4,10 @@ import Col from "react-bootstrap/Col";
 
 const CalendarCard = () => (
   <section id="calendarcard">
-    <Container>
-      <h3>User Calendar</h3>
+    <Container style={{ backgroundColor: "LightCyan"}}>
       <Row>
         <Col md="6">
+        <h3>User Calendar</h3>
           <p>
             Create your own calendar to set workout plans and meal plans so its
             easier for you to stick to your goals. You'll be amazed with your

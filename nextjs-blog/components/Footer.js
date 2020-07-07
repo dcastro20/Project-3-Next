@@ -2,28 +2,33 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+
 const FooterPage = () => {
   return (
-    <footer className="footer bg-black small text-center text-black-50">
-      <Container fluid className="text-center text-md-left">
+    <footer className="footer bg-black small text-center text-black-50" style={{ backgroundColor: "LightSlateGrey"}} >
+      <Container fluid className="text-center text-md-left" >
         <Row>
-          <Col md="6">
-            <h5 className="title" style={{ color: "black" }}>
+          <Col md="6" style={{ textAlign: "justify" }}>
+            <br></br>
+            <br></br>
+            <h5 className="title" style={{ color: "white" }}>
               Enjoying this page?
             </h5>
-            <p style={{ color: "black" }}>
+            <br></br>
+            <p style={{ color: "white" }}>
               Follow and give us a like on our social media pages!
             </p>
-            <p style={{ color: "black" }}>
+            <p style={{ color: "white" }}>
               Developed by: Danzan Ubush, Doris Castro, John Romano and Jonathan
               Kwan
-              <br></br>
               <br></br>
               Credits to the Rutgers Coding Bootcamp instructors.
             </p>
           </Col>
-          <Col md="6">
-            <h5 className="title" style={{ color: "black" }}>
+          <Col md="6" style={{ textAlign: "left" }}>
+            <br></br>
+            <br></br>
+            <h5 className="title" style={{ color: "white" }} >
               Links
             </h5>
             <ul>
@@ -42,9 +47,10 @@ const FooterPage = () => {
             </ul>
           </Col>
         </Row>
+
       </Container>
       <div className="footer-copyright text-center py-3">
-        <Container fluid style={{ color: "black" }}>
+        <Container fluid style={{ color: "white" }}>
           &copy; {new Date().getFullYear()} Copyright:{" "}
           <a href="https://github.com/dcastro20/Project-3-Next" target="_blank">
             {" "}
@@ -57,3 +63,4 @@ const FooterPage = () => {
 };
 
 export default FooterPage;
+

@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const WorkoutCard = () => (
   <section id ="workoutcard">
-  <Container>
+  <Container style={{ backgroundColor: "MintCream"}}>
 
     <Row>
       <Col md="6">

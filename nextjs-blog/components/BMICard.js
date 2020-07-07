@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const BMICard = () => (
   <section id ="bmicard">
-  <Container>
+  <Container style={{ backgroundColor: "LightCyan"}}>
     <Row>
       <Col md="6">
         <h3>BMI Calculator</h3>
