@@ -15,6 +15,7 @@ import { useCurrentUser } from "../lib/hooks";
 import ReactDOM from "react-dom";
 import App from "../components/App";
 import searchBar from "../components/searchBar";
+import ProfileCalendar from "../components/profilecalendar.js";
 
 export default function Members() {
   // Next.js backend ---------------->>
@@ -47,6 +48,10 @@ export default function Members() {
           </h3>
         </Container>
         <br></br>
+        <Container>
+          <h1>Calendar</h1>
+          <ProfileCalendar />
+        </Container>
       </section>
       <br></br>
       <Library />
