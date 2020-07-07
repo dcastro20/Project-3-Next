@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
+            {/* <Link href="/">
               <a>
                 <img
                   src="/images/fitness1.jpg"
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
                   alt={name}
                 />
               </a>
-            </Link>
+            </Link> */}
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
