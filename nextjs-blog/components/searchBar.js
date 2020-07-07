@@ -36,18 +36,30 @@ function Searchbar() {
   return (
     <div className="search-bar ui segment">
       <form onSubmit={handleSubmit} className="ui form">
-        <div className="field">
-          <label htmlFor="video-search">Video Search: </label>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          className="field"
+        >
+          <label htmlFor="video-search">
+            <b>
+              Didn't find a workout that suits you? Search for your favorites
+              one here!
+            </b>{" "}
+          </label>
           <input
             onChange={handleChange}
             name="video-search"
             type="text"
             value={term}
           />
+          <Button type="submit" variant="success">
+            Search
+          </Button>
         </div>
-        <Button type="submit" variant="success">
-          Search
-        </Button>
 
         <div>
           {videos.length ? (
