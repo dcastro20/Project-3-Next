@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const BMICard = () => (
+  <section id ="bmicard">
   <Container>
     <h3>BMI Calculator</h3>
     <Row>
@@ -18,5 +19,6 @@ const BMICard = () => (
       </Col>
     </Row>
   </Container>
+  </section>
 );
 export default BMICard;

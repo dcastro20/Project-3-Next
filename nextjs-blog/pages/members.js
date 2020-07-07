@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/membernav";
 import Layout2, { siteTitle } from "../components/Layout2";
 import utilStyles from "../styles/utils.module.css";
 import Container from "react-bootstrap/Container";
@@ -31,6 +32,8 @@ export default function Members() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Header>
+      </Header>
       <section
         className={user ? `${user.first_name} ${user.last_name}` : "stranger"}
       >

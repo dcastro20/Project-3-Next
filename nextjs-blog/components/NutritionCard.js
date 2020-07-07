@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const NutritionCard = () => (
+  <section id ="nutritioncard">
   <Container>
     <h3>Nutrition Database</h3>
     <Row>
@@ -18,6 +19,7 @@ const NutritionCard = () => (
       </Col>
     </Row>
   </Container>
+  </section>
 );
 
 export default NutritionCard;

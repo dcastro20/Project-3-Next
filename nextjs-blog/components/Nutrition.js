@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 
 const Nutrition = () => {
   return (
+    <section id ="nutrition">
     <Container>
       <Row>
         <Col md="4">
@@ -55,6 +56,7 @@ const Nutrition = () => {
         </Col>
       </Row>
     </Container>
+    </section>
   );
 };
 

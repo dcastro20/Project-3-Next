@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Library = () => (
+  <section id ="library">
   <Container>
     <h2>Push Ups</h2>
     <Row>
@@ -398,6 +399,7 @@ const Library = () => (
       </Col>
     </Row>
   </Container>
+  </section>
 );
 
 export default Library;

@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const CalendarCard = () => (
+  <section id ="calendarcard">
   <Container>
     <h3>User Calendar</h3>
     <Row>
@@ -14,5 +15,6 @@ const CalendarCard = () => (
       </Col>
     </Row>
   </Container>
+  </section>
 );
 export default CalendarCard;
