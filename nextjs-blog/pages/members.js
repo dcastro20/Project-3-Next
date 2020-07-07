@@ -17,27 +17,35 @@ import App from "../components/App";
 import searchBar from "../components/searchBar";
 import ProfileCalendar from "../components/profilecalendar.js";
 
+
+const router = useRouter();
+const [errorMsg, setErrorMsg] = useState("");
+const [user, { mutate }] = useCurrentUser();
+
+if (!user) {
+  router.push("/signUp")
+};
+
 export default function Members() {
   // Next.js backend ---------------->>
-  console.log("Members");
-  const router = useRouter();
-  const [errorMsg, setErrorMsg] = useState("");
-  const [user, { mutate }] = useCurrentUser();
+
+
+
   // redirect to home if user is authenticated
   console.log("is users Authenticated? if no, redirect to SignUp");
-  if (!user) router.push("/signUp");
+
   // Next.js backend <<----------------
 
   return (
     <Layout2 Members>
-      <Head>
+      {/* <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Header></Header>
+      <Header></Header> */}
       <section
         className={user ? `${user.first_name} ${user.last_name}` : "stranger"}
       >
-        <Container style={{ backgroundColor: "LightSlateGrey"}}>
+        <Container style={{ backgroundColor: "LightSlateGrey" }}>
           <h2 className="display-4" className="display-4">
             {" "}
           </h2>
