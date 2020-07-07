@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const Library = () => (
   <section id ="library">
-  <Container>
+  <Container >
     <h2>Push Ups</h2>
     <Row>
       <Col md="6">

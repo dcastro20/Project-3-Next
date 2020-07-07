@@ -5,12 +5,12 @@ export default class MainHeader extends Component {
     return (
       <React.Fragment>
       
-      <header id="home">
+      <header id="home" style={{ backgroundColor: "MintCream"}}>
          <nav id="nav-wrap">
              
             {/* <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
           <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> */}
-            <ul id="nav" className="nav">
+            <ul id="nav" className="nav" >
                <li className="current"><a className="smoothscroll" href="#workoutcard">The Workouts</a></li>
                <li><a className="smoothscroll" href="#bmicard">BMI Calculator</a></li>
              <li><a className="smoothscroll" href="#nutritioncard">Nutrition Database</a></li>

@@ -21,12 +21,12 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <MainHeader/>
-      <section className={utilStyles.headingMd}>
+      <section className={utilStyles.headingMd} style={{ backgroundColor: "LightSlateGrey"}}>
         <Container>
-          <h2>
+          <h2 style={{ color: "white" }}>
             Hello, {user ? `${user.first_name} ${user.last_name}` : "stranger"}!
           </h2>
-          <p>
+          <p style={{ color: "white" }}>
             Your new life starts here. No gym membership or equipments required.
             Our members have access to awesome features like our workout
             database. Try out home based workouts based on your fitness level.

@@ -36,11 +36,11 @@ export default function Members() {
       <section
         className={user ? `${user.first_name} ${user.last_name}` : "stranger"}
       >
-        <Container>
+        <Container style={{ backgroundColor: "LightSlateGrey"}}>
           <h2 className="display-4" className="display-4">
             {" "}
           </h2>
-          <h3>
+          <h3 style={{ color: "white" }}>
             This is your member page where you can view workouts from all
             levels, search nutritional facts, calculate your BMI, and customize
             your own planner!

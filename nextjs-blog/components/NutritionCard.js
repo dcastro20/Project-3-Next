@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const NutritionCard = () => (
   <section id ="nutritioncard">
-  <Container>
+  <Container style={{ backgroundColor: "MintCream"}}>
     <Row>
       <Col md="6">
         <img src="/images/Nutrition.jpg"></img>
