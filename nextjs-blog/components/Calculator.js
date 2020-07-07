@@ -55,9 +55,9 @@ class Calculator extends Component {
                 ></img>
               </Col>
               <Col md="4" style={{ width: "auto" }}>
-                <p id="lbl" style={{ textAlign: "center" }}>
+                <h4 id="lbl" style={{ textAlign: "center" }}>
                   BMI Calculator
-              </p>
+              </h4>
                 <div
                   style={{
                     display: "flex",
@@ -65,7 +65,7 @@ class Calculator extends Component {
                     alignItems: "center",
                   }}
                 ></div>
-                <form onSubmit={this.handleSubmit} className="ui form">
+                <form onSubmit={this.handleSubmit} className="ui form" style={{textAlign: "center"}}>
                   <div className="field">
                     Enter Your Weight(lbs):{" "}
                     <input

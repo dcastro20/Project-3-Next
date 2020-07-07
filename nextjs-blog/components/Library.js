@@ -31,7 +31,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -63,7 +63,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -95,7 +95,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -128,7 +128,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -154,14 +154,14 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Number of Repetitions</h3>
+        {/* <h3>Number of Repetitions</h3> */}
         <h4>Hold for 30 seconds per set.</h4>
         <p>Intermediate: hold for 60 seconds</p>
         <p>Advanced: hold for 90 seconds</p>
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -194,7 +194,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -227,7 +227,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -260,7 +260,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -293,7 +293,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -326,7 +326,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -359,7 +359,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>
@@ -392,7 +392,7 @@ const Library = () => (
       </Col>
 
       <Col md="2">
-        <h3>Rest Between Sets</h3>
+        <h4>Rest Between Sets</h4>
         <p>Beginner: 60 sec</p>
         <p>Intermediate: 45 sec</p>
         <p>Advanced: 30 sec</p>

@@ -41,11 +41,11 @@ export default function Members() {
           <h2 className="display-4" className="display-4">
             {" "}
           </h2>
-          <h2>
+          <h3>
             This is your member page where you can view workouts from all
             levels, search nutritional facts, calculate your BMI, and customize
             your own planner!
-          </h2>
+          </h3>
         </Container>
         <br></br>
       </section>
