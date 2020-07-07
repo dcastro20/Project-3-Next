@@ -9,7 +9,7 @@ class Calculator extends Component {
   state = {
     weight: "",
     height: "",
-    bmi: ''
+    bmi: "",
   };
   handleChange = (event) => {
     console.log("handleChange");
@@ -23,13 +23,16 @@ class Calculator extends Component {
   };
 
   calculateBMI() {
-    console.log('calculateBMI');
-    let result = ((this.state.weight / this.state.height / this.state.height) * 703).toFixed(2);
+    console.log("calculateBMI");
+    let result = (
+      (this.state.weight / this.state.height / this.state.height) *
+      703
+    ).toFixed(2);
     console.log("result", result);
     this.setState({
-      bmi: result.toString()
+      bmi: result.toString(),
     });
-    console.log('this.state.bmi:', this.state.bmi)
+    console.log("this.state.bmi:", this.state.bmi);
   }
 
   handleSubmit = (event) => {
@@ -37,7 +40,6 @@ class Calculator extends Component {
     console.log("handleSubmit");
     this.calculateBMI();
   };
-
 
   // Front-End -----------------------------------------------------
   render() {
@@ -55,8 +57,9 @@ class Calculator extends Component {
                 ></img>
               </Col>
               <Col md="4" style={{ width: "auto" }}>
+
                 <h4 id="lbl" style={{ textAlign: "center" }}>
-                  BMI Calculator
+                  <b>BMI Calculator</b>
               </h4>
                 <div
                   style={{
@@ -67,7 +70,7 @@ class Calculator extends Component {
                 ></div>
                 <form onSubmit={this.handleSubmit} className="ui form" style={{textAlign: "center"}}>
                   <div className="field">
-                    Enter Your Weight(lbs):{" "}
+                    <b>Enter Your Weight(lbs):</b>{" "}
                     <input
                       onChange={this.handleChange}
                       name="weight"
@@ -75,7 +78,7 @@ class Calculator extends Component {
                       value={this.state.weight}
                     />
                     <br /> <br />
-                  Enter Your Height(in.):{" "}
+                    <b>Enter Your Height(in.):</b>{" "}
                     <input
                       onChange={this.handleChange}
                       name="height"
@@ -94,19 +97,21 @@ class Calculator extends Component {
                   >
                     <Button type="submit" variant="success">
                       Calculate BMI
-                  </Button>
+                    </Button>
                   </div>
                 </form>
               </Col>
               <Col md="4">
                 <p id="lbl" style={{ textAlign: "center" }}></p>
                 <p>
-                  If your BMI is less than 18.5, it falls within the underweight
-                range <br /> If your BMI is 18.5 to 25.0, it falls within the
-                normal range <br /> If your BMI is 25.1 to 30.0, it falls within
-                the overweight range
-                <br /> If your BMI is 30.1 or higher, it falls within the obese
-                range{" "}
+                  If your BMI is <b>less than 18.5</b>, it falls within the{" "}
+                  <b>underweight range</b> <br /> If your BMI is{" "}
+                  <b>18.5 to 25.0</b>, it falls within the <b>normal range</b>{" "}
+                  <br /> If your BMI is <b>25.1 to 30.0</b>, it falls within the
+                  <b>overweight range</b>
+                  <br /> If your BMI is <b>30.1 or higher</b>, it falls within
+                  the
+                  <b>obese range</b>{" "}
                 </p>
               </Col>
             </Row>

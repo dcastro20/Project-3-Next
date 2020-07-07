@@ -32,8 +32,7 @@ export default function Members() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Header>
-      </Header>
+      <Header></Header>
       <section
         className={user ? `${user.first_name} ${user.last_name}` : "stranger"}
       >
@@ -54,9 +53,17 @@ export default function Members() {
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
+      <br></br>
       <SearchBar />
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Calculator />
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <br></br>
@@ -64,8 +71,9 @@ export default function Members() {
       <br></br>
       <br></br>
       <br></br>
-      <Footer />
       <br></br>
+      <br></br>
+      <Footer />
     </Layout2>
   );
 }
