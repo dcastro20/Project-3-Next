@@ -12,9 +12,9 @@ const Nutrition = () => {
             <img src="/images/Nutrition.jpg" alt={"Nutrition-image"}></img>
           </Col>
           <Col md="4" style={{ width: "auto" }}>
-            <p id="lbl" style={{ textAlign: "center" }}>
-              <b>Nutrition Search</b>
-            </p>
+            <h4 id="lbl" style={{ textAlign: "center" }}>
+              <b>Nutritional Values</b>
+            </h4>
             <h6
               style={{
                 display: "flex",
@@ -46,9 +46,9 @@ const Nutrition = () => {
             </div>
           </Col>
           <Col md="4">
-            <p id="lbl" style={{ textAlign: "center" }}>
+            <h4 id="lbl" style={{ textAlign: "center" }}>
               <b>Nutritional Values</b>
-            </p>
+            </4>
             <div id="monitor-data" className="value-container">
               <p className="health-data">
                 <span id="calories" />{" "}
