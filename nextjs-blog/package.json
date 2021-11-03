@@ -30,7 +30,7 @@
     "react-lazy-hero": "^2.0.0",
     "styled-components": "^5.1.1",
     "swr": "^0.2.0",
-    "validator": "^13.0.0",
+    "validator": "^13.7.0",
     "youtube-api-search": "0.0.5"
   }
 }
